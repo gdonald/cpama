@@ -3,7 +3,7 @@
 
 ## C Programming A Modern Approach - 2nd Edition by K. N. King
 
-![Book Cover](https://raw.githubusercontent.com/gdonald/cpama/master/cover.png)
+![Book Cover](https://raw.githubusercontent.com/gdonald/cpama/master/cover.jpg)
 
 ## License
 
