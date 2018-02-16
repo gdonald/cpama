@@ -19,7 +19,7 @@ int main(void)
   monthly_interest_rate = interest_rate / 100.0f / 12;
 
   loan_amount += loan_amount * monthly_interest_rate;
-  loan_amount = loan_amount - monthly_payment;
+  loan_amount -= monthly_payment;
   printf("\nBalance remaining after 1st payment: $%.2f\n", loan_amount);
 
   loan_amount += loan_amount * monthly_interest_rate;
