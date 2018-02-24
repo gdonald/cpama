@@ -12,6 +12,7 @@ int main(void)
   {
     if((i - 1) % 24 == 0)
     {
+      printf("Press Enter to continue...");
       while(getchar() != '\n');
     }
 
