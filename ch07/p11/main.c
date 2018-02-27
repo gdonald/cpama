@@ -13,7 +13,7 @@ int main(void)
 
   while((c = getchar()) != '\n')
   {
-    if(c != '\n')
+    if(c != ' ')
     {
       printf("%c", c);
     }
