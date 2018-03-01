@@ -35,7 +35,7 @@ int main(void)
     {
       printf("Closest departure time is %d:%02d%cm, arriving at %d:%02d%cm\n",
 	     departures[x] / 60, departures[x] % 60, departures[x] >= (12 * 60) ? 'p' : 'a',
-	     arrivals[x]   / 60,   arrivals[x] % 60, arrivals[x]   >= (12 * 60) ? 'p' : 'a'
+	       arrivals[x] / 60,   arrivals[x] % 60,   arrivals[x] >= (12 * 60) ? 'p' : 'a'
 	);
       break;
     }
