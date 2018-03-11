@@ -241,6 +241,7 @@ void analyze_hand(int hand[5][2])
     straight = true;
   }
 
+  // royal
   if(straight && flush && hand[0][RANK] == 8)
   {
     royal = true;
