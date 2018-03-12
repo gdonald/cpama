@@ -1,3 +1,4 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,7 +13,12 @@ int main(void)
 
   while((c = getchar()) != '\n' && total < N)
   {
-    a[total++] = c;
+    c = tolower(c);
+
+    if(c >= 'a' && c <= 'z')
+    {
+      a[total++] = c;
+    }
   }
 
   for(x = 0, y = total - 1; x < total; x++, --y)
