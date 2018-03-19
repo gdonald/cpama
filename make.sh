@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 for d in $(find . -type d -name p0\*); do
     cd $d
