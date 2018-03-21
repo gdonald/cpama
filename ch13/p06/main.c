@@ -9,7 +9,7 @@ void lower(char *s)
 {
   for(; *s; s++)
   {
-    *s = tolower(*s);
+    *s = tolower((unsigned char)*s);
   }
 }
 
