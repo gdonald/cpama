@@ -1,0 +1,5 @@
+Functions are unsuitable as macros when
+1) There are side effect such as ++ or --.
+2) The macro contains a function call that has side effects.
+
+Avoiding side effects is important for macros.
