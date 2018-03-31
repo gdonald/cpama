@@ -1,3 +1,4 @@
 main
-main.o
+justify
+*.o
 *~
