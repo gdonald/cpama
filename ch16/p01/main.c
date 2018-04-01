@@ -40,7 +40,7 @@ int main(void)
     {"Ukraine",             380},
     {"United Kingdom",       44},
     {"United States",         1},
-    {"Vietname",             84},
+    {"Vietnam",              84},
   };
 
   int code, x;
