@@ -15,7 +15,7 @@ int main(void)
     {"Burma (Myanmar)",      95},
     {"China",                86},
     {"Columbia",             57},
-    {"Congo, Den, Reo, of", 243},
+    {"Congo, Dem. Rep. of", 243},
     {"Egypt",                20},
     {"Ethiopia",            251},
     {"France",               33},
