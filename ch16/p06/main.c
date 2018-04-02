@@ -6,10 +6,8 @@ int compare_dates(struct date d1, struct date d2)
 {
   int days1 = (d1.y * 365) + (d1.m * 30) + d1.d; 
   int days2 = (d2.y * 365) + (d2.m * 30) + d2.d;
-  
-  if(days1 < days2) return -1;
-  if(days1 > days2) return  1;
-  return  0;
+
+  return (days2 < days1) - (days2 > days1);
 }
 
 int main(void)
