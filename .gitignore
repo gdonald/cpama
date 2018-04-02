@@ -1,4 +1,5 @@
 main
 justify
+inventory
 *.o
 *~
