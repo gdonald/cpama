@@ -53,7 +53,7 @@ int main(void)
 
   printf("before: \n");
   p = first;
-  while(p != NULL)
+  while(p)
   {
     printf("%d ", p->value);
     p = p->next;
@@ -67,7 +67,7 @@ int main(void)
 
   printf("after: \n");
   p = first;
-  while(p != NULL)
+  while(p)
   {
     printf("%d ", p->value);
     p = p->next;
