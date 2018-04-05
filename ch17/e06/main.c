@@ -51,7 +51,7 @@ int main(void)
   first = add_to_list(first, 4);
   first = add_to_list(first, 5);
 
-  printf("before: \n");
+  printf("before:\n");
   p = first;
   while(p)
   {
@@ -60,12 +60,12 @@ int main(void)
   }
 
   printf("\n\n");
-  
+
   delete_from_list(&first, 1);
   delete_from_list(&first, 5);
   delete_from_list(&first, 3);
 
-  printf("after: \n");
+  printf("after:\n");
   p = first;
   while(p)
   {
