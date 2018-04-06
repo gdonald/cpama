@@ -40,13 +40,13 @@ struct node *insert_into_ordered_list(struct node *list, struct node *new_node)
     cur = cur->next;
   }
 
-  // insert at beginning
+  // first
   if(prev == NULL)
   {
     list = new_node;
     new_node->next = cur;
   }
-  // insert at middle or end
+  // middle or last
   else
   {
     prev->next = new_node;
@@ -58,7 +58,9 @@ struct node *insert_into_ordered_list(struct node *list, struct node *new_node)
 
 int main(void)
 {
-  struct node *first = NULL, *p, *new;
+  struct node *first = NULL, *p = NULL, *new = NULL;
+
+  // empty, first, middle, last
   int a[4] = { 3, 1, 2, 4 };
 
   for(int x = 0; x < 4; x++)
@@ -75,7 +77,7 @@ int main(void)
     print_list(first);
   }
   
-  while(first != NULL)
+  while(first)
   {
     p = first;
     first = first->next;
