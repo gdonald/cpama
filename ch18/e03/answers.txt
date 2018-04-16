@@ -1,0 +1,28 @@
+
+extern float a;
+
+void f(register double b)
+{
+  static int c;
+  auto char d;
+}
+
+extern float a
+storage: static
+scope: file
+linkage: external
+
+register double b
+storage: automatic
+scope: block
+linkage: internal
+
+static int c
+storage: static
+scope: block
+linkage: internal
+
+auto char d
+storage: automatic
+scope: block
+linkage: internal
