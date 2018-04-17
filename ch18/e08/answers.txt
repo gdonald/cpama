@@ -1,0 +1,8 @@
+
+(a) array of 10 function pointers that take an int parameter and return a char
+
+(b) function that takes no parameters and returns a pointer to an array of 5 ints
+
+(c) function that takes no parameters and returns a function pointer that takes an int parameter and returns a pointer to a float
+
+(d) function that takes two parameters: an integer and a pointer to a function with an int parameter and no return valuem returns a function pointer that takes a int parameter and returns void.
