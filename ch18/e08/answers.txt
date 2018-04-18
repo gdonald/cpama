@@ -1,8 +1,20 @@
 
-(a) array of 10 function pointers that take an int parameter and return a char
+(a) char (*x[10])(int);
 
-(b) function that takes no parameters and returns a pointer to an array of 5 ints
+    array of 10 function pointers that take an int parameter and return a char
 
-(c) function that takes no parameters and returns a function pointer that takes an int parameter and returns a pointer to a float
+(b) int (*x(int))[5];
 
-(d) function that takes two parameters: an integer and a pointer to a function with an int parameter and no return valuem returns a function pointer that takes a int parameter and returns void.
+    function that takes an int parameter and returns a pointer to an array of
+    5 ints
+
+(c) float *(*x(void))(int);
+
+    function that takes no parameters and returns a function pointer that takes
+    an int parameter and returns a pointer to a float
+
+(d) void (*(int, void (*y)(int)))(int);
+
+    function that takes two parameters: an integer and a pointer to a function
+    that takes an int parameter and has no return value and returns a function
+    pointer that takes an int parameter and returns void.
