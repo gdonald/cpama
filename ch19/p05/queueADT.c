@@ -1,9 +1,17 @@
 
 #include "queueADT.h"
 
+static void terminate(const char *message)
+{
+  printf("%s\n", message);
+  exit(EXIT_FAILURE);
+}
+
 Queue create()
 {
   Queue q = malloc(sizeof(struct queue_type));
+  if(q == NULL)
+    terminate("Error in create: queue cannot be created.");
   q->empty = 0;
   q->next = 0;
   q->count = 0;
