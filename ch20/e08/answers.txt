@@ -1,0 +1,4 @@
+
+(a) The value of ~0 is a number containing all 1 bits. Shifting this number to the left by n places yields a result of the form 1…10…0, where there are n 0 bits. Applying the ~ operator to that number yields a result of the form 0…01…1, where there are n 1 bits.
+
+(b) It returns a bit-field within i of length n starting at position m. Positions are assumed to be numbered starting from the rightmost bit, which is position 0.
