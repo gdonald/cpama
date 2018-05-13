@@ -3,14 +3,14 @@
 
 struct f
 {
-  unsigned int sign:     1;
-  unsigned int exponent: 8;
   unsigned int fraction: 23;  
+  unsigned int exponent: 8;
+  unsigned int sign:     1;
 };
 
 int main(void)
 {
-  struct f fp = { .sign = 1, .exponent = 2, .fraction = 3 };
+  struct f fp = { .fraction = 3, .exponent = 2, .sign = 1 };
 
   printf("bits: %lu\n", sizeof(fp) * CHAR_BIT);
 
