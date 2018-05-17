@@ -1,0 +1,112 @@
+Vanilla Debian 9.4 + `apt install clang`:
+
+aio.h - Asynchronous I/O control block.
+aliases.h - Structure to represent one entry of the alias data base.
+alloca.h - Allocate a block that will be freed when the calling function exits.
+argp.h - Interface for parsing unix-style argument vectors.
+argz.h - Routines for dealing with '\0' separated arg vectors.
+ar.h - Header describing `ar' archive file format.
+assert.h - ISO C99 Standard: 7.2 Diagnostics.
+byteswap.h - Reverse order of bytes.
+clif.h - Something to do with traceroute.
+complex.h - ISO C99:  7.3 Complex arithmetic.
+cpio.h - Extended cpio format from POSIX.1.
+crypt.h - UFC-crypt: ultra fast crypt(3) implementation.
+ctype.h - ISO C99 Standard 7.4: Character handling.
+dirent.h - POSIX Standard: 5.1.2 Directory Operations.
+dlfcn.h - User functions for run-time dynamic loading.
+elf.h - Defines standard ELF types, structures, and macros.
+endian.h - Definitions for byte order, according to significance of bytes, from low addresses to high addresses.
+envz.h - Routines for dealing with '\0' separated environment vectors.
+err.h - 4.4BSD utility functions for error messages.
+errno.h - ISO C99 Standard: 7.5 Errors.
+error.h - Declaration for error-reporting function.
+execinfo.h - interface for parsing unix-style argument vectors.
+fcntl.h - POSIX Standard: 6.5 File Control Operations.
+features.h - Feature macros to specify the desired environment.
+fenv.h - ISO C99 7.6: Floating-point environment.
+fmtmsg.h - Message display handling.
+fnmatch.h - Filename-matching types.
+fstab.h - File system table.
+fts.h - File tree traversal functions declarations.
+ftw.h - X/Open Portability Guide 4.2.
+_G_config.h - Needed by libio to define various configuration parameters.
+gconv.h - For writing additional gconv modules.
+getopt.h - Declarations for getopt.
+glob.h - Find pathnames matching a pattern.
+gnu-versions.h - Specifies version numbers associated with library interfaces in GNU packages.
+grp.h - POSIX Standard: 9.2.1 Group Database Access.
+gshadow.h - Declaration of types and functions for shadow group suite.
+iconv.h - Identifier for conversion method from one codeset to another.
+ifaddrs.h - Declarations for getting network interface addresses.
+inttypes.h - ISO C99: 7.8 Format conversion of integer types.
+langinfo.h - Access to locale-dependent parameters.
+lastlog.h - Used in 4.3BSD to define `struct lastlog'.
+libgen.h - Definitions for pattern matching functions.
+libintl.h - Message catalogs for internationalization.
+libio.h - Part of the iostream library.
+limits.h - ISO C99 Standard: 7.10/5.2.4.2.1 Sizes of integer types.
+link.h - Data structure for communication from the run-time dynamic linker for loaded ELF shared objects.
+locale.h - ISO C99 Standard: 7.11 Localization.
+malloc.h - Prototypes and definition for malloc implementation.
+math.h - Declarations for math functions.
+mcheck.h - Heap consistency checking.
+memory.h - Wrappers for the C libraries allocation functions.
+mntent.h - Utilities for reading/writing fstab, mtab, etc.
+monetary.h - Monetary value formatting functions.
+mqueue.h - Realtime message queues.
+netdb.h - Definitions for network database operations.
+nl_types.h - Data types.
+nss.h - Interface to NSS.
+obstack.h - Object stack macros.
+paths.h - Pathname building.
+poll.h - Definitions for the poll() function.
+printf.h - Print to stdout.
+pthread.h - Posix threads.
+pty.h - Functions for pseudo TTY handling.
+pwd.h - POSIX Standard: 9.2.2 User Database Access.
+re_comp.h - Compiled regular expressions.
+regex.h - Definitions for data structures and routines for the regular expression library.
+regexp.h - Regular expressions.
+resolv.h - DNS/Bind function definitions.
+sched.h - Definitions for POSIX 1003.1b-1993 (aka POSIX.4) scheduling interface.
+search.h - Declarations for System V style searching functions.
+semaphore.h - Realtime semaphores.
+setjmp.h - ISO C99 Standard: 7.13 Nonlocal jumps.
+sgtty.h - Provides the terminal interface for the Berkeley line discipline.
+shadow.h - Declaration of types and functions for shadow password suite.
+signal.h - ISO C99 Standard: 7.14 Signal handling.
+spawn.h - Definitions for POSIX spawn interface.
+stab.h - Debugger symbols.
+stdc-predef.h - Early include.
+stdint.h - ISO C99: 7.18 Integer types.
+stdio_ext.h - Functions to access FILE structure internals.
+stdio.h - ISO C99 Standard: 7.19 Input/output.
+stdlib.h - ISO C99 Standard: 7.20 General utilities.
+string.h - ISO C99 Standard: 7.21 String handling.
+strings.h - Old BSD strings functions.
+stropts.h - Streams interface.
+syscall.h - Indirect system calls.
+sysexits.h - Exit status codes for system programs.
+syslog.h - Definitions for system error logging.
+tar.h - Extended tar format from POSIX.1.
+termio.h - Define values for termios.
+termios.h - POSIX Standard: 7.1-2 General Terminal Interface.
+tgmath.h - ISO C99 Standard: 7.22 Type-generic math.
+thread_db.h - Interface to libthread_db.so library for debugging -lpthread.
+time.h - ISO C99 Standard: 7.23 Date and time.
+ttyent.h - Defines the type struct ttyent and declares the functions setttyent, endttyent, getttyent, getttynam.
+uchar.h - ISO C11 Standard: 7.28 Unicode utilities.
+ucontext.h - System V ABI compliant user-level context switching support.
+ulimit.h - ulimit commands.
+unistd.h - POSIX Standard: 2.10 Symbolic Constants.
+ustat.h - Header describing obsolete `ustat' interface.
+utime.h - POSIX Standard: 5.6.6 Set File Access and Modification Times.
+utmp.h - Login records.
+utmpx.h - User accounting database definitions.
+values.h - Old compatibility names for <limits.h> and <float.h> constants.
+wait.h - Declarations for waiting.
+wchar.h - ISO C99 Standard: 7.24 Extended multibyte and wide character utilities.
+wctype.h - ISO C99 Standard: 7.25 Wide character classification and mapping utilities.
+wordexp.h - Bits set in the FLAGS argument to `wordexp'.
+xlocale.h - Structure for reentrant locale using functions.
