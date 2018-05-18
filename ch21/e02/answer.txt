@@ -1,0 +1,11 @@
+
+In stdio.h:
+
+#define scanf __isoc99_scanf
+
+extern int scanf (const char *__restrict __format, ...) __wur;
+
+
+I found this by searching for function names with 'extern' then using that to search for 'define':
+
+grep extern stdio.h | awk '{ split($0,a," "); print a[3]; }' | xargs -I % grep -e % stdio.h | grep define
