@@ -1,0 +1,11 @@
+
+Section 7.1.4 states:
+
+Any invocation of a library function that is implemented as a macro shall expand
+to code that evaluates each of its arguments exactly once, fully protected by
+parentheses where necessary, so it is generally safe to use arbitrary
+expressions as arguments.
+
+#define islower(c) ((c) >= 'a' && (c) <= 'z')
+
+evaluates 'c' twice so an expression such as c++ will fail if the value of c is 'z'.
