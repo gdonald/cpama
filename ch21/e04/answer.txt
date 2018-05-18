@@ -1,0 +1,94 @@
+
+7.26 Future library directions
+
+  1 The following names are grouped under individual headers for convenience.
+    All external names described below are reserved no matter what headers are
+    included by the program.
+
+7.26.1 Complex arithmetic <complex.h>
+
+  1 The function names
+
+    cerf
+    cerfc
+    cexp2
+    cexpm1
+    clog10
+    clog1p
+    clog2
+    clgamma
+    ctgamma
+
+  and the same names suffixed with f or l may be added to the declarations in
+  the <complex.h> header.
+
+7.26.2 Character handling <ctype.h>
+
+  1 Function names that begin with either is or to, and a lowercase letter may
+    be added to the declarations in the <ctype.h> header.
+
+7.26.3 Errors <errno.h>
+
+  1 Macros that begin with E and a digit or E and an uppercase letter may be
+    added to the declarations in the <errno.h> header.
+
+7.26.4 Format conversion of integer types <inttypes.h>
+
+  1 Macro names beginning with PRI or SCN followed by any lowercase letter or X
+    may be added to the macros defined in the <inttypes.h> header.
+
+7.26.5 Localization <locale.h>
+
+  1 Macros that begin with LC_ and an uppercase letter may be added to the
+    definitions in the <locale.h> header.
+
+7.26.6 Signal handling <signal.h>
+
+  1 Macros that begin with either SIG and an uppercase letter or SIG_ and an
+    uppercase letter may be added to the definitions in the <signal.h> header.
+
+7.26.7 Boolean type and values <stdbool.h>
+
+  1 The ability to undefine and perhaps then redefine the macros bool, true, and
+    false is an obsolescent feature.
+
+7.26.8 Integer types <stdint.h>
+
+  1 Typedef names beginning with int or uint and ending with _t may be added to
+    the types defined in the <stdint.h> header. Macro names beginning with INT
+    or UINT and ending with _MAX, _MIN, or _C may be added to the macros defined
+    in the <stdint.h> header.
+
+7.26.9 Input/output <stdio.h>
+
+  1 Lowercase letters may be added to the conversion specifiers and length
+    modifiers in fprintf and fscanf. Other characters may be used in extensions.
+
+  2 The gets function is obsolescent, and is deprecated.
+
+  3 The use of ungetc on a binary stream where the file position indicator is
+    zero prior to the call is an obsolescent feature.
+
+7.26.10 General utilities <stdlib.h>
+
+  1 Function names that begin with str and a lowercase letter may be added to
+    the declarations in the <stdlib.h> header.
+
+7.26.11 String handling <string.h>
+
+  1 Function names that begin with str, mem, or wcs and a lowercase letter may
+    be added to the declarations in the <string.h> header.
+
+7.26.12 Extended multibyte and wide character utilities <wchar.h>
+
+  1 Function names that begin with wcs and a lowercase letter may be added to
+    the declarations in the <wchar.h> header.
+
+  2 Lowercase letters may be added to the conversion specifiers and length
+    modifiers in fwprintf and fwscanf. Other characters may be used in
+    extensions.
+
+7.26.13 Wide character classification and mapping utilities <wctype.h>
+
+  1 Function names that begin with is or to and a lowercase letter may be added
+    to the declarations in the <wctype.h> header.
