@@ -1,0 +1,30 @@
+
+(a)
+
+7.1.3 Reserved identifiers
+
+[...]
+
+- All identifiers that begin with an underscore and either an uppercase letter
+  or another underscore are always reserved for any use.
+
+(b)
+
+The _ctype array will contain a bitfield table.
+
+  Position 9 (horizontal tab):
+  0000 1000
+
+  Position 32 (space character):
+  0010 0000
+
+  Position 65 (A):
+  0000 0001
+
+  Position 94 (^):
+  0001 0000
+
+(c)
+
+The macro only needs to be evaluated once.
+
