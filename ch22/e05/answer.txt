@@ -1,0 +1,2 @@
+
+A negative integer with less than 4 digits is formatted differently.
