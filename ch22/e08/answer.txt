@@ -1,0 +1,10 @@
+
+%s adds a \0 to the end to terminate the string:
+
+Enter a character with leading whitespace: a
+a: 'aaa'
+length: 3
+
+Enter a character with leading whitespace: b
+a: 'b'
+length: 1
