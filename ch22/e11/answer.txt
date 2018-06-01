@@ -1,0 +1,23 @@
+
+The program compiles without error, but clang does produce warnings:
+
+main.c:28:12: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  while(ch = getc(source_fp) != EOF)
+        ~~~^~~~~~~~~~~~~~~~~~~~~~~~
+main.c:28:12: note: place parentheses around the assignment to silence this warning
+  while(ch = getc(source_fp) != EOF)
+           ^
+        (                          )
+main.c:28:12: note: use '==' to turn this assignment into an equality comparison
+  while(ch = getc(source_fp) != EOF)
+           ^
+           ==
+1 warning generated.
+clang main.o -o main
+
+
+The destination file will be the same length as the source file but will only
+contains the first character of the source file, the ^A SOH (start of heading)
+character:
+
+https://en.wikipedia.org/wiki/C0_and_C1_control_codes#SOH
