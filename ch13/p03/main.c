@@ -1,7 +1,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <sys/time.h>
 
 #define NUM_SUITS 4
 #define NUM_RANKS 13
@@ -13,7 +13,9 @@ int main(void)
   const char *rank_code[] = { "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
   const char *suit_code[] = { "Clubs", "Diamonds", "Hearts", "Spades" };
 
-  srand((unsigned) time(NULL));
+  struct timeval time;
+  gettimeofday(&time, NULL);
+  srand((time.tv_sec * 1000) + (time.tv_usec / 1000));
 
   printf("Enter number of cards in hand: ");
   scanf("%d", &num_cards);

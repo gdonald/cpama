@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <sys/time.h>
 
 void generate_random_walk(char walk[10][10])
 {
@@ -84,8 +84,11 @@ void print_array(char walk[10][10])
 int main(void)
 {
   char a[10][10];
-  
-  srand((unsigned) time(NULL));
+
+  struct timeval time;
+  gettimeofday(&time, NULL);
+  srand((time.tv_sec * 1000) + (time.tv_usec / 1000));
+
   generate_random_walk(a);
   print_array(a);
   

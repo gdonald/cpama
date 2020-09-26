@@ -3,3 +3,4 @@ justify
 inventory
 *.o
 *~
+.idea

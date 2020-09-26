@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <sys/time.h>
 
 int main(void)
 {
   char a[10][10], l;
   int r, c, dir, x = 0, y = 0, move = 0;
   int moves[4] = {0};
-  
-  srand((unsigned) time(NULL));
+
+  struct timeval time;
+  gettimeofday(&time, NULL);
+  srand((time.tv_sec * 1000) + (time.tv_usec / 1000));
   
   for(r = 0; r < 10; r++)
   {

@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <sys/time.h>
 
 int roll_dice(void)
 {
@@ -49,7 +49,9 @@ int main(void)
   char play;
   int wins = 0, loses = 0;
 
-  srand((unsigned) time(NULL));
+  struct timeval time;
+  gettimeofday(&time, NULL);
+  srand((time.tv_sec * 1000) + (time.tv_usec / 1000));
   
   do
   {
